@@ -1,0 +1,31 @@
+.filtersContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    &__path {
+        color:#262626;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+        text-decoration-line: underline;  
+    }
+    &__headname {
+        color:#1A1A1A;
+        font-family: Roboto;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 46px; /* 121.053% */
+    }
+    &__results {
+        color:#4D4D4D;
+        /* Subheading 16/medium */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+    }
+}

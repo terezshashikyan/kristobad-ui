@@ -1,0 +1,37 @@
+.colorFilter {
+    position: relative;
+
+    &__selectMenu {
+        // position: absolute;
+        background-color: white;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+    
+        &_item {
+        border-radius: 4px;
+        border: 1px solid #595959;
+        background: #FFF;
+        display: flex;
+        padding: 4px 5px 4px 4px;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+        }
+        &_item:hover {
+            background-color: lightgray;
+          }
+
+        &_button {
+        // display: flex;
+        // justify-content: space-between;
+        color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+        /* Body 14/medium */
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        }
+    }
+}

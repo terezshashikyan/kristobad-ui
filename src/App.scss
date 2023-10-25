@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./Assets/Fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+/* @font-face {
+    font-family: "Roboto Bold";
+    src: url("./Assets/Fonts/Roboto-Bold.ttf") format("truetype");
+} */
+
+.container {
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 1390px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.productsPage {
+    &__section3and4_container {
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+
+        gap: 40px;
+    }
+
+    &__section2 {
+        display: flex;
+        gap: 8px;
+        justify-content: end;
+    }
+
+    &__section3 {
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        width: 100%;
+        gap: 8px;  
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__section4 {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+}
+
