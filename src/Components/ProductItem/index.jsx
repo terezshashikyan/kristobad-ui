@@ -1,10 +1,10 @@
+import {heartIcon} from '../../Assets/Icons';
+
 import './style.scss';
-import heartIcon from '../../Assets/Icons/heartIcon.png'
 
-
-function ProductItem({product}) {
+const ProductItem = ({product}) => {
     return (
-        <div className="productItem">
+        <div key = {product.id} className="productItem">
                 <div className="prodoctItem__img" style={{backgroundImage: `url(${product.img})`, width: '296px', height: '222px' }}>  
                 </div>
                 <div className="productItem__size">

@@ -1,10 +1,9 @@
-import './style.scss';
 import { useState } from 'react';
-import down from '../../Assets/Icons/arrow_down.png';
-import up from '../../Assets/Icons/arrow_up.png';
+import {arrowUp, arrowDown} from '../../Assets/Icons';
 
+import './style.scss';
 
-function Sort() {
+const Sort = () => {
 
   const [open, setOpen] = useState(false);
 
@@ -14,7 +13,7 @@ function Sort() {
     return (
      
           <div className='sort'>
-            <div className='filters__selectMenu_button' onClick={handleOpen}>Sort {open? <img src= {up} alt="up" />:<img src= {down} alt="down" /> }</div>
+            <div className='filters__selectMenu_button' onClick={handleOpen}>Sort {open? <img src= {arrowUp} alt="up" />:<img src= {arrowDown} alt="down" /> }</div>
             {open ? (<ul className='sort__selectMenu'>
             <li className='sort__selectMenu_item'>New Product</li>
             <li className='sort__selectMenu_item'>Price(high to low)</li>

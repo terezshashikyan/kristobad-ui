@@ -1,7 +1,7 @@
 import './style.scss';
 
 
- function FiltersContent() {
+const FiltersContent = () => {
 return (
     <section className="filtersContent container">
         <p className="filtersContent__path">Home - Women </p>

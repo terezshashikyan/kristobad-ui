@@ -1,9 +1,9 @@
-import './style.scss';
 import { useState } from 'react';
-import down from '../../Assets/Icons/arrow_down.png';
-import up from '../../Assets/Icons/arrow_up.png';
+import {arrowDown, arrowUp} from '../../Assets/Icons';
 
-function PriceFilter() {
+import './style.scss';
+
+const PriceFilter = () => {
 
 const [open, setOpen] = useState(false);
 
@@ -13,7 +13,7 @@ const [open, setOpen] = useState(false);
 
     return (
         <div className='priceFilter'>
-          <div className='priceFilter__selectMenu_button' onClick={handleOpen}>Price {open? <img src= {up} alt="up" />:<img src= {down} alt="down" /> }</div>
+          <div className='priceFilter__selectMenu_button' onClick={handleOpen}>Price {open? <img src= {arrowUp} alt="up" />:<img src= {arrowDown} alt="down" /> }</div>
         {open ? (<div className='priceFilter__selectMenu'>
         <div className='priceFilter__selectMenu_item'>up to US $50</div>
         <div className='priceFilter__selectMenu_item'>up to US $100</div>

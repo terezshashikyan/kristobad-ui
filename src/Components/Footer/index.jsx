@@ -1,11 +1,9 @@
-import './style.scss';
-import logo from '../../Assets/Icons/whiteLogo.png';
-import instagram from '../../Assets/Icons/instagram.png';
-import facebook from '../../Assets/Icons/facebook.png';
-import mail from '../../Assets/Icons/mail.png';
+import {logo, instagram, facebook, mail} from '../../Assets/Icons';
 
-function Footer() {
-    return (
+import './style.scss';
+
+const Footer = () => {
+    (
     <footer>
       <div className="footer container">
         <div className="footer__block footer__block1">

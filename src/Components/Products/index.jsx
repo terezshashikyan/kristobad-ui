@@ -1,60 +1,19 @@
-import './style.scss';
+import { PRODUCTS } from './constant';
 import ProductItem from '../ProductItem';
-import img1 from '../../Assets/Images/1.png';
 
-const PRODUCTS = [
-    {
-        img: img1,
-        size: '20.01.512.0001',
-        price: '$88',
-    },
-    {
-        img: img1,
-        size: '20.01.512.0001',
-        price: '$88',
-    }
-,
-{
-    img: img1,
-    size: '20.01.512.0001',
-    price: '$88',
-},
-{
-    img: img1,
-    size: '20.01.512.0001',
-    price: '$88',
-},
-{
-    img: img1,
-    size: '20.01.512.0001',
-    price: '$88',
-},
-{
-    img: img1,
-    size: '20.01.512.0001',
-    price: '$88',
-},
-{
-    img: img1,
-    size: '20.01.512.0001',
-    price: '$88',
-},
-{
-    img: img1,
-    size: '20.01.512.0001',
-    price: '$88',
-}
-];
+import './style.scss';
 
-function Products() {
+
+const Products = () => {
+    const productsRenderer = PRODUCTS.map((prod)=> {
+        return (
+            <ProductItem product = {prod}/>
+        )
+    })
     return (
       
         <section className = 'products' >
-            {PRODUCTS.map((prod)=> {
-                return (
-                    <ProductItem product = {prod}/>
-                )
-            })}
+            {productsRenderer}
             <button className='products__showMoreButton'>More</button>
         </section>
     )

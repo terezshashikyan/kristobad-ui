@@ -1,0 +1,25 @@
+import {galleryImg1} from '../../Assets/Images/';
+
+export const GALLERY_IMAGES = [
+    {   id: 1,
+        src: galleryImg1,
+    },
+    {   id: 2,
+        src: galleryImg1,
+    },
+    {   id: 3,
+        src: galleryImg1,
+    },
+    {   id: 4,
+        src: galleryImg1,
+    },
+    {   id: 5,
+        src: galleryImg1,
+    },
+    {   id: 6,
+        src: galleryImg1,
+    },
+    {   id: 7,
+        src: galleryImg1,
+    },
+];

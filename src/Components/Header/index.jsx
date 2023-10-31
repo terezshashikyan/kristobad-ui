@@ -1,16 +1,18 @@
+import { MENU_ITEMS } from './constant';
+import {logo, US, arrow, heartIcon, searchIcon, cartIcon, menuIcon} from '../../Assets/Icons';
+
 import './style.scss';
-import logo from '../../Assets/Icons/Logo.png';
-import US from '../../Assets/Icons/US.png';
-import arrow from '../../Assets/Icons/arrow.png';
-import heartIcon from '../../Assets/Icons/heartIcon.png';
-import searchIcon from '../../Assets/Icons/searchIcon.png';
-import cartIcon from '../../Assets/Icons/cartIcon.png';
-import menuIcon from '../../Assets/Icons/Menu.png';
 
-const MENU_ITEMS = ['Home', 'Women', 'Men', 'Gifts', 'About us']
+const Header = () => {
 
-function Header() {
-    return (
+    const menuItemsRenderer = MENU_ITEMS.map((item) => {
+        return (
+            <div key = {item} className="header__block2_item">
+                <p className="subtitle">{item}</p>
+            </div>
+        )
+    })
+   return (
         <header> 
         <section className="header container">
             <div className="header__block header__block1">
@@ -27,14 +29,7 @@ function Header() {
                     </div>
             </div>
             <div className="header__block header__block2">
-                    {
-                        MENU_ITEMS.map((item) => {
-                            return (
-                                <div className="header__block2_item">
-                                    <p className="subtitle">{item}</p>
-                                </div>
-                            )
-                        })}
+                    {menuItemsRenderer}
             </div>
             <div className="header__block header__block3">
                     <div className="header__block3_wishList">

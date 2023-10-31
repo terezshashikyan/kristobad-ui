@@ -1,12 +1,12 @@
-import './style.scss';
+import { useState } from 'react';
 import PriceFilter from '../PriceFilter';
 import ColorFilter from '../ColorFilter';
-import { useState } from 'react';
-import down from '../../Assets/Icons/arrow_down.png';
-import up from '../../Assets/Icons/arrow_up.png';
+import { arrowUp, arrowDown } from '../../Assets/Icons';
+
+import './style.scss';
 
 
- function Filters() {
+ const Filters = () => {
 
     const [open, setOpen] = useState(false);
 
@@ -16,7 +16,7 @@ import up from '../../Assets/Icons/arrow_up.png';
   
 return (
     <div className='filters'>
-          <div className='filters__selectMenu_button' onClick={handleOpen}>Filter {open? <img src= {up} alt="up" />:<img src= {down} alt="down" /> }</div>
+          <div className='filters__selectMenu_button' onClick={handleOpen}>Filter {open? <img src= {arrowUp} alt="up" />:<img src= {arrowDown} alt="down" /> }</div>
         {open ? (<div className='filters__selectMenu'>
         <PriceFilter/>
         <ColorFilter/>

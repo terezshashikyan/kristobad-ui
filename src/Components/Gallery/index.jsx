@@ -1,20 +1,20 @@
-import gallery1 from '../../Assets/Images/galleryImg1.png';
+import {GALLERY_IMAGES} from './constant.jsx';
 import './style.scss';
 
-const GALLERY_IMAGES = [gallery1, gallery1, gallery1, gallery1, gallery1, gallery1,];
+const Gallery = () => {
+    const galleryImagesRenderer = GALLERY_IMAGES.map((img) => {
+        return (
+           <img key = {img.id} src= {img.src} alt = 'gallery item'/>
+        )
+    });
 
-function Gallery() {
-    return (
+     (
         <section className="gallery">
             <h1 className="gallery__headname">
             KristoBad & Celebrities
             </h1>
             <div className="gallery__images">
-                {GALLERY_IMAGES.map((img) => {
-                    return (
-                       <img src= {img} alt = 'gallery item'/>
-                    )
-                })}
+                {galleryImagesRenderer}
             </div>
         </section>
     )
