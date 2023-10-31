@@ -10,7 +10,7 @@ const [open, setOpen] = useState(true);
 
 const colorsRenderer = COLORS.map((color) => {
   return (
-      <div key = {color.colorCode} className="colorFilter__selectMenu_item">
+      <div key = {color.id} className="colorFilter__selectMenu_item">
           <div style={{backgroundColor: color.colorCode, width: '24px', height: '24px', borderRadius:'50%',}}></div>
           <p className="colorFilter__selectMenu_item_colorName">{color.colorName}</p>
       </div>

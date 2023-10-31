@@ -3,7 +3,7 @@ import {logo, instagram, facebook, mail} from '../../Assets/Icons';
 import './style.scss';
 
 const Footer = () => {
-    (
+    return (
     <footer>
       <div className="footer container">
         <div className="footer__block footer__block1">

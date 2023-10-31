@@ -8,7 +8,7 @@ const Gallery = () => {
         )
     });
 
-     (
+    return (
         <section className="gallery">
             <h1 className="gallery__headname">
             KristoBad & Celebrities
